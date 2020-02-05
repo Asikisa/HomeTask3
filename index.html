@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Asya tries</title>
+</head>
+<body>
+<div class="main-container">
+    <div class="bl-background">
+
+
+        <div class="bl-list">
+
+            <div class="input-block">
+                <input id="text" name="search" type="text" placeholder="Назва товару">
+                <button data-tooltip="Натиснути, щоб додати" name="search" id="dodatu" type="button" class="button-add">
+                    <span class="add">Додати</span></button>
+            </div>
+        </div>
+
+
+        <div class="bl-bought">
+
+            <div class="raised segment">
+                <div class="segment nbt">
+                    <h3>Залишилось</h3>
+                </div>
+                <div class="stats-not-bought">
+                </div>
+                <div class="ui segment">
+                    <h3>Куплено</h3>
+                </div>
+                <div class="stats-bought ui segment">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<template id="row">
+    <div class="bl-row">
+        <div class="title-product">
+            <p class="bl-product">
+            </p>
+        </div>
+
+        <div class="bl-count">
+            <button data-tooltip="Зменшити к-сть продуктів" class="bl-minus">-</button>
+            <span class="bl-label"></span>
+            <button data-tooltip="Збільшити к-сть продуктів" class="bl-plus">+</button>
+        </div>
+
+        <div class="bl-buttons">
+            <button data-tooltip="Купити" class="bl-buy">Куплено</button>
+            <button data-tooltip="Скасувати" class="bl-cancel">х</button>
+        </div>
+
+    </div>
+</template>
+<template id="circle">
+    <span class="ui mini label stats-label">
+        <span class="title"></span>
+        <span class="ui mini orange circular label count"></span>
+    </span>
+</template>
+
+<div class="buy-list">
+    <span class="buy-list-span"> Buy List </span>
+    <span class="hidden"> Created by: </span>
+    <span class="hidden-name"> Kryuchkova Asya </span>
+</div>
+
+<div class="name-box">
+    <span class="text"> Created by: </span>
+    <span class="text-name"> Kryuchkova Asya </span>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
+</body>
+
+</html>

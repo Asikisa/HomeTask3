@@ -1,0 +1,539 @@
+body {
+    height: 100%;
+    background: #DADADA;
+    line-height: 1.4285em;
+    box-sizing: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-container {
+        margin: 0 41px;
+        max-width: 1200px;
+        padding-top: 100px;
+        box-sizing: inherit;
+        display: flex;
+    }
+
+}
+
+.bl-background {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+.name {
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    line-height: 30px;
+    font-size: 0.88em;
+    font-family: 'Lato', 'Helvetica Neue', 'Arial,Helvetica', sans-serif;
+}
+
+.main-container {
+    padding: 100px 0 0;
+    width: 90%;
+    margin: auto;
+}
+
+.bl-list {
+    background: white;
+    margin-bottom: 20px;
+    -webkit-box-flex: 2;
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    margin-right: 3em;
+    width: auto;
+    padding: 0;
+}
+
+.bl-bought {
+
+    background: white;
+    display: flex;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    width: 25%;
+    border-radius: 5px;
+    padding: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 14px;
+}
+
+
+.segment {
+    top: 0;
+    bottom: 0;
+    border-radius: 0;
+    margin: 0;
+    width: auto;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    position: relative;
+    background: #FFF;
+    font-weight: 700;
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+
+}
+
+.stats-not-bought{
+    border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+    padding: 10px;
+}
+
+.stats-bought {
+    border-bottom: 0;
+}
+
+.label {
+    font-weight: 700;
+    font-size: .85714286rem;
+    display: inline-block;
+    line-height: 1;
+    vertical-align: baseline;
+    margin: 0.2em;
+    background-color: #E8E8E8;
+    background-image: none;
+    padding: .5833em .833em;
+    color: rgba(0, 0, 0, .6);
+    text-transform: none;
+    border: 0 solid transparent;
+    border-radius: .28571429rem;
+    box-sizing: inherit;
+}
+
+.orange.label {
+    font-size: .64285714rem;
+    min-width: 1em;
+    min-height: 1em;
+    padding: .5em !important;
+    line-height: 1em;
+    text-align: center;
+    border-radius: 500rem;
+    background-color: #F2711C !important;
+    color: #FFF !important;
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 0 .14285714em;
+    background-image: none;
+    text-transform: none;
+    font-weight: 700;
+    border: 0 solid transparent;
+}
+
+.mini.label {
+    font-size: .64285714rem;
+}
+
+.bl-minus {
+    border-radius: 100%;
+    border: #EF9E9E;
+    -webkit-box-shadow: 0 -0.3em 0 0 rgba(34, 36, 38, 0.15) inset;
+    box-shadow: 0 -0.3em 0 0 rgba(34, 36, 38, 0.15) inset;
+    background-color: #EF9E9E;
+    font-size: .71428571rem;
+    padding: 10px;
+    font-weight: 700;
+    width: 2.7em;
+    height: 2.7em;
+    margin-right: .4em;
+    color: white;
+    border: 0;
+    text-align: center;
+}
+
+.bl-plus {
+    border-radius: 100%;
+    -webkit-box-shadow: 0 -0.3em 0 0 rgba(34, 36, 38, 0.15) inset;
+    box-shadow: 0 -0.3em 0 0 rgba(34, 36, 38, 0.15) inset;
+    color: white;
+    font-size: .71428571rem;
+    padding: 10px;
+    font-weight: 700;
+    width: 2.7em;
+    height: 2.7em;
+    margin-left: .4em;
+    background: #16AB39;
+    border: 0;
+    text-align: center;
+}
+
+.title {
+    padding-left: 5px;
+    bottom: 0;
+    margin: 0;
+    top: 0;
+    width: auto;
+    border: none;
+    padding: 1em;
+    padding-left: 0;
+    position: relative;
+    box-sizing: inherit;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+
+}
+
+.title-product {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+
+}
+
+.bl-product {
+    display: block;
+    margin: 0;
+    width: 100px;
+    font-size: .88em;
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+}
+
+.bl-count {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: auto;
+}
+
+
+.bl-cancel {
+    width: 2em;
+    height: 2.3em;
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 0 1px rgba(34, 36, 38, 0.15) inset, 0 -0.3em 0 0 rgba(34, 36, 38, 0.15) inset;
+    border-radius: 6px;
+    margin: 0 .25em 0 0;
+    line-height: 1em;
+    border: 0;
+    display: inline-block;
+    min-height: 1em;
+    outline: 0;
+    border: none;
+    vertical-align: middle;
+    background: linear-gradient(transparent, rgba(0, 0, 0, .05)) #DB2828;
+    font-weight: 700;
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-style: normal;
+
+}
+
+
+
+.bl-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.bl-buy {
+    cursor: pointer;
+    display: inline-block;
+    min-height: 1em;
+    outline: 0;
+    border: none;
+    vertical-align: middle;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.05)) #F8F8F8;
+    margin: 0 .25em 0 0;
+    padding: 10px 20px 11.5px;
+    text-shadow: none;
+    font-size: .71428571rem;
+    line-height: 1em;
+    border-radius: .4em;
+    box-shadow: 0 0 0 1px rgba(34, 36, 38, 0.15) inset, 0 -0.3em 0 0 rgba(34, 36, 38, 0.15) inset;
+    font-weight: 600;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    color: #616161;
+
+}
+
+.bl-label {
+    padding: 5px 10px;
+    color: #616161;
+    font-size: .88em;
+    background-color: #DADADA;
+    border-radius: 4px;
+    font-weight: 700;
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.bl-row {
+
+    padding: 14px;
+    display: flex;
+    margin: auto;
+    width: auto;
+    border-radius: 1px;
+    background: white;
+    border: 0.5px solid rgba(34, 36, 38, .15);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.bl-row.bought .bl-product {
+    text-decoration: line-through;
+    color: dimgrey;
+}
+
+
+.bl-row.bought .bl-minus {
+    visibility: hidden;
+}
+
+
+.bl-row.bought .bl-plus {
+    visibility: hidden;
+}
+
+.bl-row.bought .bl-buy {
+    color: dimgrey;
+
+
+}
+
+#dodatu {
+    background-color: #2185D0;
+    color: #FFF;
+    text-shadow: none;
+    border: none;
+    padding: 0 2em;
+    height: 36px;
+    -webkit-box-shadow: rgba(34, 36, 38, 0.15) inset;
+    font-weight: 700;
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    margin-left: -2%;
+    outline: none;
+    font-size: 0.88em;
+    box-shadow: 0 -0.3em 0 0 rgba(34, 36, 38, .15) inset;
+    border-radius: .28571429rem;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+#text {
+    font-family: Arial;
+    font-size: .8em;
+    padding-left: 10px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border-radius: 3px 0 0 3px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-style: solid;
+    border: 1px solid lightgrey;
+}
+
+#text:focus {
+    color: black;
+    border: 1px solid lightblue;
+}
+
+#text:focus::-webkit-input-placeholder {
+    color: black;
+}
+
+#text:focus::-moz-placeholder {
+    color: black;
+}
+
+#text:focus:-ms-input-placeholder {
+    color: black;
+}
+
+#text:focus::-ms-input-placeholder {
+    color: black;
+}
+
+#text:focus::placeholder {
+    color: black;
+}
+
+.raised {
+    border-bottom: 0;
+}
+
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    width: 80px;
+    left: 0;
+    bottom: 0;
+    background: #c939be;
+    color: #fff;
+    padding: 0.5em;
+    -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    opacity: 0;
+    -webkit-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+[data-tooltip]:hover::after {
+    opacity: 1;
+    bottom: 40px;
+}
+
+.input-block {
+    display: flex;
+    padding: 10px;
+    border-radius: 1px;
+    background: white;
+    border: 0.5px solid rgba(34, 36, 38, .15);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 600px) {
+    .bl-background {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .bl-list {
+        width: 100%;
+        /*  margin-right: 0;
+          -webkit-box-flex: 1;
+          -webkit-flex: auto;
+          -ms-flex: auto;
+          flex: auto; */
+
+    }
+
+    .bl-bought {
+        width: 100%;
+        -webkit-box-flex: 1;
+        -webkit-flex: auto;
+        -ms-flex: auto;
+        flex: auto;
+    }
+
+
+    .name {
+        margin: 0;
+    }
+
+}
+
+
+.buy-list {
+    content: "";
+    bottom: 0;
+    width: 150px;
+    height: 50px;
+    background: #c726f0;
+    border: #c726f0;
+    padding-left: 14px;
+    margin-left: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #F8F8F8;
+    position: fixed;
+    line-height: 3;
+    transition: 1s;
+
+    font-weight: 700;
+    font-size: 20px;
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+}
+
+.name-box {
+    content: "";
+    bottom: 0;
+    width: 150px;
+    height: 50px;
+    background: white;
+    border: #c726f0;
+    border: solid;
+    padding-left: 14px;
+    margin-left: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #c726f0;
+    position: fixed;
+    line-height: 1.5;
+
+    font-weight: 700;
+    font-size: 14px;
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    visibility: hidden;
+}
+
+
+.buy-list:hover {
+    height: 100px;
+    background: hotpink;
+}
+
+.buy-list-span {
+    margin-left: 20%;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.hidden {
+    display: block;
+    height: 10px;
+    line-height: 0;
+    padding: 6px;
+    font-size: 10px;
+}
+
+.hidden-name {
+    display: block;
+    height: 10px;
+    line-height: 0;
+    padding: 6px;
+    font-size: 15px;
+}
+
+.name-box {
+    content: "";
+    bottom: 0;
+    width: 150px;
+    height: 50px;
+    background: white;
+    border: #c726f0;
+    border: solid;
+    padding-left: 14px;
+    margin-left: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #c726f0;
+    position: fixed;
+    line-height: 1.5;
+
+    font-weight: 700;
+    font-size: 14px;
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    visibility: hidden;
+}
+
+@media print {
+    .buy-list:after {
+        display: none;
+    }
+
+    .name-box {
+        visibility: visible;
+    }
+}

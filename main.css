@@ -5,7 +5,7 @@ body {
     box-sizing: inherit;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .main-container {
         margin: 0 41px;
         max-width: 1200px;
@@ -47,6 +47,7 @@ body {
     margin-right: 3em;
     width: auto;
     padding: 0;
+    min-width: 650px;
 }
 
 .bl-bought {
@@ -62,31 +63,34 @@ body {
     margin-left: 14px;
 }
 
-
 .segment {
     top: 0;
     bottom: 0;
     border-radius: 0;
     margin: 0;
+    padding: 0;
     width: auto;
     -webkit-box-shadow: none;
     box-shadow: none;
     border: none;
     position: relative;
     background: #FFF;
+
     font-weight: 700;
     font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
     border-bottom: 1px solid rgba(34, 36, 38, 0.15);
 
 }
 
-.stats-not-bought{
+.stats-not-bought {
     border-bottom: 1px solid rgba(34, 36, 38, 0.15);
     padding: 10px;
 }
 
 .stats-bought {
     border-bottom: 0;
+    padding: 10px;
+    text-decoration: line-through;
 }
 
 .label {
@@ -128,6 +132,7 @@ body {
 .mini.label {
     font-size: .64285714rem;
 }
+
 
 .bl-minus {
     border-radius: 100%;
@@ -229,7 +234,6 @@ body {
 }
 
 
-
 .bl-buttons {
     display: flex;
     align-items: center;
@@ -251,7 +255,7 @@ body {
     border-radius: .4em;
     box-shadow: 0 0 0 1px rgba(34, 36, 38, 0.15) inset, 0 -0.3em 0 0 rgba(34, 36, 38, 0.15) inset;
     font-weight: 600;
-    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
     color: #616161;
 
 }
@@ -283,6 +287,13 @@ body {
     color: dimgrey;
 }
 
+.stats-bought .title  {
+    text-decoration: line-through;
+}
+
+.stats-bought .orange.label{
+    text-decoration: line-through;
+}
 
 .bl-row.bought .bl-minus {
     visibility: hidden;
@@ -295,8 +306,6 @@ body {
 
 .bl-row.bought .bl-buy {
     color: dimgrey;
-
-
 }
 
 #dodatu {
@@ -393,14 +402,14 @@ body {
 
 .input-block {
     display: flex;
-    padding: 10px;
+    padding: 16px;
     border-radius: 1px;
     background: white;
     border: 0.5px solid rgba(34, 36, 38, .15);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .bl-background {
         -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;

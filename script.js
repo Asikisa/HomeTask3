@@ -14,7 +14,9 @@ init = () => {
     }];
 };
 
+
 addItem = (arr, name) => {
+    name = name.trim();
     arr.push({name, quantity: 1, bought: false});
     renderAllItems();
 };
@@ -26,12 +28,14 @@ removeItem = (arr, id) => {
 };
 
 changeItem = (arr, id, property, value) => {
+
     arr[id][property] = value;
     console.log(arr[id][property]);
     renderAllItems();
 };
 
 renderItem = (item, i) => {
+
     let row = document.querySelector('#row').content.querySelector('.bl-row').cloneNode(true);
     let circle = document.querySelector('#circle').content.querySelector('.label').cloneNode(true);
     let plus = row.querySelector('.bl-plus');
@@ -44,6 +48,7 @@ renderItem = (item, i) => {
     let productName = row.querySelector('.bl-product');
     let fieldCircle = circle.querySelector('.count');
     let nameCircle = circle.querySelector('.title');
+
 
     plus.onclick = () => {
         changeItem(array, i, 'number', item.quantity++);
@@ -58,10 +63,12 @@ renderItem = (item, i) => {
         changeItem(array, i, 'bought', !item.bought);
     };
     add.onclick = () => {
-        addItem(array, input.value);
+        var name = input.value.trim();
+        if (name == null || name.length === 0)
+            return;
+        addItem(array, name);
         input.value = "";
     };
-
 
     let rowList = document.querySelector('.bl-list');
     let circleNotBoughtList = document.querySelector('.stats-not-bought');
